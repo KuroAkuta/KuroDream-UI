@@ -11,5 +11,5 @@ const install = (app: { use: (arg0: any) => void }) => {
 const KDUI = {
   install,
 };
-
+export{ kdButton, kdInput, kdTextarea};
 export default KDUI;

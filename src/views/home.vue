@@ -125,5 +125,19 @@
     box-sizing: border-box;
     display: fixed;
     margin-left: 10%;
+    /*滚动条*/
+    &::-webkit-scrollbar {
+        width: 8px;
+        }
+        /*滚动条本体*/
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: rgba(0,0,0,0.2);
+        }
+        /*滚动条外轨道*/
+        &::-webkit-scrollbar-track {
+            border-radius: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
 }
 </style>

@@ -57,12 +57,7 @@ const kdClass = computed(()=>{
     color:#333;
     border: 1px solid #dcdfe6;
     background: white;
-    &:hover,&:focus{
-        opacity: 0.8;
-        color:$primary;
-        border-color: #c6e2ff;
-        background-color: #ecf5ff;
-    }
+
 
 }
 .kd-button-primary{
