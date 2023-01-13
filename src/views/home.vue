@@ -3,14 +3,15 @@
         <div class="title">
             KuroDream UI <br>
             for Vue3 + Vite + Typesript( as any ) <br>
+
         </div>
+        
         
     </div>
 </template>
 
 <script setup lang='ts'>
-   import { ref, reactive } from 'vue'
-
+   import { ref, reactive } from 'vue' ;
 </script>
 
 <style scoped>

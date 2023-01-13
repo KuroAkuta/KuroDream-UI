@@ -25,10 +25,11 @@ export default [
         component: () => import("/packages/textarea/doc/doc.md"),
       },
       {
-        path: "space",
-        name: "间距",
-        component: () => import("/packages/space/doc/doc.md"),
+        path: "select",
+        name: "下拉框",
+        component: () => import("/packages/select/doc/doc.md"),
       },
+    
     ],
   },
   {

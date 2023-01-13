@@ -1,4 +1,4 @@
-## 这是space间距
+## 这是select
 <script setup>
     import demo from './demo.vue'
 
@@ -7,4 +7,4 @@
 
 ### 案例
 <demo/>
-<preview comp-name="space" demo-name="demo"></preview>
+<!-- <preview comp-name="select" demo-name="demo"></preview> -->
