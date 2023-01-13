@@ -32,9 +32,5 @@ app.use(KuroDream);</code>
 
 <hr>
 
-![image](https://dss2.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/weather/icons/a2.png)
 
-
-<pre v-highlight>
-<code></code>
 </pre>

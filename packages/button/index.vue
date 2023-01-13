@@ -47,7 +47,7 @@ const kdClass = computed(()=>{
     cursor: pointer;
     display: inline-block;
     border-radius: 4px;
-    margin: 4px;
+    
     &:hover,&:focus{
         opacity: 0.8;
     }
