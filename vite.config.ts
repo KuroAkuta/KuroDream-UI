@@ -1,13 +1,16 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import Markdown from 'vite-plugin-md'
-import { resolve } from 'path';
+import Markdown from "vite-plugin-md";
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue({
-    include:[/\.vue$/, /\.md$/],
-  }),Markdown()],
+  plugins: [
+    vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
+    Markdown(),
+  ],
   build: {
     rollupOptions: {
       external: ["vue"],
@@ -24,15 +27,15 @@ export default defineConfig({
     },
   },
   resolve: {
-      alias: {
-        '@':resolve(__dirname ,'src')
-      }
+    alias: {
+      "@": resolve(__dirname, "src"),
     },
-    css:{
-      preprocessorOptions: {
-        scss: {
-          additionalData:'@use "./src/assets/styles/style.scss" as *;'
-      }
-    }
-  }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "./src/assets/styles/style.scss" as *;',
+      },
+    },
+  },
 });

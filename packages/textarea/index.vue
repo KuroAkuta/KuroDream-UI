@@ -2,7 +2,7 @@
 
     <div class="kd-textarea">
         <textarea :cols="cols" :rows="rows" :value="modelValue" @input="input" :disabled="disabled" :readonly="readonly"
-            :placeholder="placeholder" @focus="focus" @blur="blur" :style="kdStyle" :maxlength="maxlength" ></textarea>
+            :placeholder="placeholder" @focus="focus" @blur="blur" :style="kdStyle" :maxlength="maxlength"></textarea>
         <div class="max-lenth-inline">
             {{ showTextNum }}
         </div>
@@ -86,7 +86,7 @@ const kdStyle = computed(() => {
         {
             'resize': props.resize ? 'auto' : 'none',
         },
-    
+
     ]
 }) as any;
 </script>

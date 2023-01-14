@@ -5,23 +5,24 @@
             for Vue3 + Vite + Typesript( as any ) <br>
 
         </div>
-        
-        
+
+
     </div>
 </template>
 
 <script setup lang='ts'>
-   import { ref, reactive } from 'vue' ;
+import { ref, reactive } from 'vue';
 </script>
 
 <style scoped>
-.container{
+.container {
     margin-top: 5vh;
     widows: 100%;
     height: 100vh;
-    
+
 }
-.title{
+
+.title {
     width: 100vh;
     height: 40vh;
     text-align: center;

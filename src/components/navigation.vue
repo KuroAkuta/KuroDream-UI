@@ -3,8 +3,8 @@
         <li style="flex:1"><a href="#">KuroDream UI</a></li>
 
         <li><a href="#guide">快速开始</a></li>
-        <li><a href="https://github.com/KuroAkuta/KuroDream-UI"  target="_blank">Github</a></li>
-        
+        <li><a href="https://github.com/KuroAkuta/KuroDream-UI" target="_blank">Github</a></li>
+
 
     </ul>
 </template>
@@ -26,7 +26,7 @@ ul {
     width: 100%;
     height: 5vh;
     display: flex;
-    
+
 
     flex-direction: row;
     align-items: center;
@@ -35,7 +35,7 @@ ul {
     li a {
         display: block;
         color: white;
-        
+
         padding: 0px 16px;
         text-decoration: none;
 

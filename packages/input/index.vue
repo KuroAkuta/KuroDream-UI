@@ -1,6 +1,7 @@
 <template>
     <div :class="kdClass">
-        <input :type="type" class="" :value="modelValue" @input="input" :placeholder="placeholder" :disabled="disabled" :clearable="clearable">
+        <input :type="type" class="" :value="modelValue" @input="input" :placeholder="placeholder" :disabled="disabled"
+            :clearable="clearable">
         <span class="clear-icon" :style="clearStyle" @click="clearInput"><i>x</i></span>
     </div>
 
@@ -22,13 +23,13 @@ const input = (e: any) => {
 //接收
 const props = defineProps({
     modelValue: {
-        type:String,
-        default:"",
+        type: String,
+        default: "",
     },
     placeholder: String,
     disabled: Boolean,
-    clearable:Boolean,
-    type:String,
+    clearable: Boolean,
+    type: String,
 })
 
 //disable定制class
@@ -43,16 +44,16 @@ const kdClass = computed(() => {
 
 //清除文本
 const clearStyle = computed(() => {
-    return[
+    return [
         {
-            'display':props.clearable?props.modelValue ? 'block' : 'none' : 'none',
-            
+            'display': props.clearable ? props.modelValue ? 'block' : 'none' : 'none',
+
         }
     ]
 })
-const clearInput = () =>{
+const clearInput = () => {
     emit('update:modelValue', '')
-    
+
 }
 
 
@@ -88,7 +89,7 @@ const clearInput = () =>{
         position: absolute;
         top: 6px;
         right: 4px;
-        cursor:pointer;
+        cursor: pointer;
     }
 }
 

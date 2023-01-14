@@ -1,6 +1,8 @@
 <template>
     <button :class="kdClass" :disabled="disabled">
-            <span><slot></slot></span>
+        <span>
+            <slot></slot>
+        </span>
     </button>
 </template>
 
@@ -10,22 +12,22 @@ export default {
 }
 </script>
 <script setup lang='ts'>
-import { ref, reactive, computed} from 'vue'
+import { ref, reactive, computed } from 'vue'
 const props = defineProps({
-    type:{
-        type:String,
-        default:"default"
+    type: {
+        type: String,
+        default: "default"
     },
-    disabled:Boolean,
-    plain:Boolean,
+    disabled: Boolean,
+    plain: Boolean,
 })
-const kdClass = computed(()=>{
+const kdClass = computed(() => {
     return [
         'kd-button',
         `kd-button-${props.type}`,
-        props.disabled? 'kd-button-disabled':'',
-        props.plain? 'kd-button-plain':'',
-       
+        props.disabled ? 'kd-button-disabled' : '',
+        props.plain ? 'kd-button-plain' : '',
+
     ]
 })
 
@@ -42,58 +44,70 @@ const kdClass = computed(()=>{
     outline: none;
     background: none;
     line-height: 1;
-    font-size: 14px;;
+    font-size: 14px;
+    ;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
     border-radius: 4px;
-    
-    &:hover,&:focus{
+
+    &:hover,
+    &:focus {
         opacity: 0.8;
     }
 
 }
+
 .kd-button-default {
-    color:#333;
+    color: #333;
     border: 1px solid #dcdfe6;
     background: white;
 
 
 }
-.kd-button-primary{
-    color:#fff;
+
+.kd-button-primary {
+    color: #fff;
     background: $primary;
     border-color: $primary;
 }
-.kd-button-success{
-    color:#fff;
+
+.kd-button-success {
+    color: #fff;
     background: $success;
     border-color: $success;
 }
-.kd-button-warning{
-    color:#fff;
+
+.kd-button-warning {
+    color: #fff;
     background: $warning;
     border-color: $warning;
 }
-.kd-button-info{
-    color:#fff;
+
+.kd-button-info {
+    color: #fff;
     background: $info;
     border-color: $info;
 }
-.kd-button-danger{
-    color:#fff;
+
+.kd-button-danger {
+    color: #fff;
     background: $error;
     border-color: $error;
 }
-.kd-button-disabled{
+
+.kd-button-disabled {
     opacity: 0.4;
     cursor: no-drop;
-    &:hover,&:focus{
-        opacity: 0.4;       
-        
+
+    &:hover,
+    &:focus {
+        opacity: 0.4;
+
     }
 }
-.kd-button-plain{
+
+.kd-button-plain {
     border-radius: 20px;
 }
 </style>

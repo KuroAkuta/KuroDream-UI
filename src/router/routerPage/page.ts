@@ -29,7 +29,6 @@ export default [
         name: "下拉框",
         component: () => import("/packages/select/doc/doc.md"),
       },
-    
     ],
   },
   {

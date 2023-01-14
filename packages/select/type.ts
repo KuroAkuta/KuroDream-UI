@@ -1,5 +1,6 @@
 export interface OptionsType {
-    label: string
-    value: string | number 
-
-  }
+  [key: string]:any;
+  
+  value: string | number;
+  disabled: boolean;
+}
