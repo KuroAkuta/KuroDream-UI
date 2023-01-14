@@ -26,6 +26,7 @@ ul {
     width: 100%;
     height: 5vh;
     display: flex;
+    z-index: 999;
 
 
     flex-direction: row;

@@ -29,6 +29,11 @@ export default [
         name: "下拉框",
         component: () => import("/packages/select/doc/doc.md"),
       },
+      {
+        path: "radio",
+        name: "单选",
+        component: () => import("/packages/radio/doc/doc.md"),
+      },
     ],
   },
   {
